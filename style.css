@@ -1,0 +1,208 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    color: black;
+}
+
+.start{
+    position: relative;
+    left: 45%;
+}
+
+.boxes{
+    width:100%;
+    height: 800px;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.request{
+    position: relative;
+    bottom: 177px;
+    opacity: 0;
+}
+
+.box1{
+    width: 200px;
+    height:100px;
+    background: red;
+    position: relative;
+    margin: 20px 0px;
+}
+.box2{
+    width: 200px;
+    height:100px;
+    background: blue;
+    position: relative;
+    margin: 20px 0px;
+}
+.box3{
+    width: 200px;
+    height:100px;
+    background: rgb(197, 18, 241);
+    position: relative;
+    margin: 20px 0px;
+}
+
+
+
+
+
+
+/*===============class get add after clicking on start ================== */
+
+
+.animations1{
+    animation-name: move1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes move1{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 140px;
+      
+    }
+}
+.animations1-1{
+    animation-name: move1-1;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes move1-1{
+    0%{
+        top: 140px;
+    }
+    100%{
+        top: 0px;
+    }
+}
+
+/*=======================Model box========================== */
+.animations2{
+    animation-name: move2;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes move2{
+    0%{
+        left: 0px;
+    }
+    100%{
+        left: 210px;
+    }
+}
+
+
+
+
+/*=======================view box========================== */
+.animations3{
+    animation-name: move3;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+@keyframes move3{
+    0%{
+        transform: none;
+    }
+    100%{
+        transform: translate(-210px,-140px);
+    }
+}
+
+
+
+/*============ request class animation ================== */
+.request-animation{
+    animation-name: rmove;
+    animation-duration: 7s;
+}
+@keyframes rmove{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        bottom: -100px;
+    }
+}
+
+
+/*==============Para animations============== */
+
+.model-para{
+    position: relative;
+    opacity: 0;
+    right: 0px;
+}
+
+.view-para{
+    position: relative;
+    opacity: 0;
+    right: 0px;
+}
+
+.ma{
+    animation-name: mpara;
+    animation-duration: 10s;
+}
+
+@keyframes mpara{
+    0%{
+        right: 0px;
+        opacity: 0;
+    }
+    100%{
+        right: 100px;
+        opacity: 1;
+    }
+}
+
+.va{
+    animation-name: vpara;
+    animation-duration: 10s;
+}
+
+@keyframes vpara{
+    0%{
+        left: 0px;
+        opacity: 0;
+    }
+    100%{
+        left: 300px;
+        opacity: 1;
+    }
+}
+
+/*================ http para ================ */
+
+.http{
+    position: relative;
+    opacity: 0;
+}
+
+.http-animation{
+    animation-name: htp;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes htp{
+    0%{
+        opacity: 0;
+        bottom: 0px;
+    }
+    100%{
+        opacity: 1;
+        bottom: 100px;
+    }
+}
